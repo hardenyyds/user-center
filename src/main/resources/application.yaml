@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root@123
+    url: jdbc:mysql://192.168.200.10:3306/yupi
+  application:
+    name: user-center
+  session:
+    timeout: 86400
+server:
+  port: 8080
+
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  global-config:
+    db-config:
+      id-type: auto
+      logic-delete-field: isDelete
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
